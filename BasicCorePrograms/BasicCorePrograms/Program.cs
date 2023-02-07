@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         public static void Main()
         {
             Console.WriteLine("\n*__________Basic Core Peograms__________*");
-            Console.WriteLine("1. Flipcoin\n2. Leap Year\n3. Power Of Two\n4. Harmonic Number\n5. Prime Factors\n6. Quotient And Remainder\n7. Even Or Oddn\n8. Swap Two Number");
+            Console.WriteLine("1. Flipcoin\n2. Leap Year\n3. Power Of Two\n4. Harmonic Number\n5. Prime Factors\n6. Quotient And Remainder\n7. Even Or Oddn\n8. Swap Two Number\n9. Vowel Or Consonant");
             Console.Write("Enter a Options: ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -49,6 +49,10 @@ namespace BasicCorePrograms
                 case 8:
                     SwapTwoNumbers twoNumbers= new SwapTwoNumbers();
                     twoNumbers.swap();
+                    break;
+                case 9:
+                    VowelOrConsonant alphabet = new VowelOrConsonant();
+                    alphabet.VowelConsonant();
                     break;
 
             }
