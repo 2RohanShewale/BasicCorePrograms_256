@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         public static void Main()
         {
             Console.WriteLine("\n*__________Basic Core Peograms__________*");
-            Console.WriteLine("1. Flipcoin\n2. Leap Year");
+            Console.WriteLine("1. Flipcoin\n2. Leap Year\n3. Power Of Two");
             Console.Write("Enter a Options: ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -25,6 +25,10 @@ namespace BasicCorePrograms
                 case 2:
                     LeapYear leapYear = new LeapYear();
                     leapYear.Display();
+                    break;
+                case 3:
+                    PowerOfTwo power = new PowerOfTwo();
+                    power.Table();
                     break;
 
             }
