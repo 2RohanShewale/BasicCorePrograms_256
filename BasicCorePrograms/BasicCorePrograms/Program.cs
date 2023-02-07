@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         public static void Main()
         {
             Console.WriteLine("\n*__________Basic Core Peograms__________*");
-            Console.WriteLine("1. Flipcoin\n2. Leap Year\n3. Power Of Two\n4. Harmonic Number\n5. Prime Factors\n6. Quotient And Remainder");
+            Console.WriteLine("1. Flipcoin\n2. Leap Year\n3. Power Of Two\n4. Harmonic Number\n5. Prime Factors\n6. Quotient And Remainder\n7. Even Or Odd");
             Console.Write("Enter a Options: ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -41,6 +41,10 @@ namespace BasicCorePrograms
                 case 6:
                     QuotientRemainder quotient = new QuotientRemainder();
                     quotient.Quotient();
+                    break;
+                case 7:
+                    EvenOdd operation = new EvenOdd();
+                    operation.EvenOrOdd();
                     break;
 
             }
