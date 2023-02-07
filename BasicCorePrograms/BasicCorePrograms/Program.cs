@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         public static void Main()
         {
             Console.WriteLine("\n*__________Basic Core Peograms__________*");
-            Console.WriteLine("1. Flipcoin\n2. Leap Year\n3. Power Of Two\n4. Harmonic Number");
+            Console.WriteLine("1. Flipcoin\n2. Leap Year\n3. Power Of Two\n4. Harmonic Number\n5. Prime Factors");
             Console.Write("Enter a Options: ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -34,7 +34,10 @@ namespace BasicCorePrograms
                     HarmonicNumber harmonic = new HarmonicNumber();
                     harmonic.Harmonic();
                     break;
-
+                case 5:
+                    PrimeFactors prime = new PrimeFactors();
+                    prime.Factors();
+                    break;
 
             }
 
